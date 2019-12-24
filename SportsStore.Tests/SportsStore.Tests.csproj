@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <!-- Added for Test Start -->
+  <ItemGroup>
+    <ProjectReference Include="..\SportsStore\SportsStore.csproj" />
+  </ItemGroup>
+  <!-- Added for Test End-->
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
+    <PackageReference Include="xunit" Version="2.2.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
+    
+    <!-- Added for Test Start-->
+    <PackageReference Include="Moq" Version="4.7.99" />
+    <!-- Added for Test End-->
+    
+    
+  </ItemGroup>
+
+</Project>
